@@ -163,7 +163,6 @@ EOT;
 }
 
 if (!function_exists('build_heading')) {
-
     /**
      * 生成页面Heading
      *

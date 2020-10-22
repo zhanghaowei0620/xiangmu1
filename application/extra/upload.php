@@ -10,7 +10,7 @@ return [
      * CDN地址
      */
     'cdnurl'    => '',
-    /**
+    /**     
      * 文件保存格式
      */
     'savekey'   => '/uploads/{year}{mon}{day}/{filemd5}{.suffix}',

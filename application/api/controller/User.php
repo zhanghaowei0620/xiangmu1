@@ -62,7 +62,7 @@ class User extends Api
         $mobile = $this->request->request('mobile');
         $captcha = $this->request->request('captcha');
         if (!$mobile || !$captcha) {
-            $this->error(__('Invalid parameters'));
+            $this->error(__('Invalid parameters'));a
         }
         if (!Validate::regex($mobile, "^1\d{10}$")) {
             $this->error(__('Mobile is incorrect'));
