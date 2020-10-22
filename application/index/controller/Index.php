@@ -15,5 +15,4 @@ class Index extends Frontend
     {
         return $this->view->fetch();
     }
-
 }
