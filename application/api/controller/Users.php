@@ -10,6 +10,7 @@ use app\common\model\News as NewsModel;
 
 use think\Db;
 use think\Cookie;
+use think\Request;
 
 
 /**
@@ -53,9 +54,9 @@ class Users extends Api
      * 
      * 登录
      */ 
-    public function login(){
-        $username = $this->request->request('username');
-        $password = $this->request->request('password');
+    public function login(Request $request){
+        $username = Request::instance()->post('username');
+        $password = Request::instance()->post('password');
         // $username = '测试';
         // $password = '1212';
         if(!$username || !$password){
